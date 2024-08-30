@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #d9d9d9;
+  }
+  
+  h1,
+  p,
+  form {
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    background-color: #d9d9d9;
+    padding-bottom: 1rem;
+    height: 100vh;
+  }
+  .form-container {
+      overflow-y: auto;
+      width: 60%;
+  }
+  
+  .image-container {
+    width: 40%;
+    height: 100vh;
+  }
+  
+  #image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 3rem auto;
+    overflow-y: auto;
+  }
+  
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    color: #2c3e50;
+    font-family: Merriweather, serif;
+    font-weight: 700;
+    line-height: 48.6px;
+    align-items: center;
+  }
+  
+  #header-text {
+    font-family: roboto;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 16px;
+    color: #7f8c8d;
+    line-height: 23.44px;
+    text-align: center;
+  }
+  
+  .form-area {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  #input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 398px;
+    max-width: 400px;
+    min-width: min-content;
+  }
+  
+  #input-field label {
+    font-family: Merriweather, serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2c3e50;
+  }
+  
+  #input-field input {
+    border: 1px solid #2c3e50;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    background-image: none;
+    cursor: pointer;
+    outline: none;
+    /* padding: 14px 16px; */
+    box-sizing: border-box;
+    height: 40px;
+  }
+  
+  #input-field #placeholder {
+    font-style: italic;
+    font-size: 10px;
+    color: #7f8c8d;
+  }
+  input {
+      padding: 23px 58px;
+  }
+  #signup-btn {
+    font-family: Roboto;
+    font-size: 14px;
+    background-color: #f39c12;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid transparent;
+    width: 398px;
+    max-width: 400px;
+    min-width: min-content;
+    box-sizing: border-box;
+    margin-top: 8px;
+    border-radius: 15px;
+    min-height: 48px;
+    /* padding: 12px 24px; */
+  }
+  
+  #signup-btn:hover {
+    background-color: #f19d15c9;
+  }
+  
+  #line {
+    color: #7f8c8d;
+    display: inline-flex;
+    width: 398px;
+    max-width: 400px;
+    min-width: min-content;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  #line hr {
+    margin: 0;
+    width: 40%;
+    color: #7f8c8d;
+    height: 0.2px;
+  }
+  
+  .button {
+    display: flex;
+    margin-top: 1.5rem;
+    gap: 10rem;
+  }
+  
+  #google-btn {
+    background-color: #7f8c8d59;
+    color: #7f8c8d;
+    font-weight: 200;
+    font-size: 12px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    width: 120px;
+    max-width: 130px;
+    min-width: min-content;
+    box-sizing: border-box;
+    min-height: 35px;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    font-family: Roboto;
+  }
+  
+  #google-btn:hover {
+      transform: scale(0.9);
+  }
+  
+  #google-logo {
+    width: 15px;
+  }
+  
+  #facebook-btn {
+      background-color: #7f8c8d59;
+    color: #7f8c8d;
+    font-weight: 200;
+    font-size: 12px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    width: 120px;
+    max-width: 130px;
+    min-width: min-content;
+    box-sizing: border-box;
+    min-height: 35px;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    font-family: Roboto;
+  }
+  
+  #facebook-btn:hover {
+      transform: scale(0.9);
+  }
+  
+  #policy {
+      font-family: Roboto;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 400;
+      text-align: center;
+      width: 398px;
+      max-width: 400px;
+      min-width: min-content;
+      margin-top: 3rem;
+      color: #7f8c8d;
+  }
+  
+  #policy a {
+      text-decoration: none;
+      color: #7f8c8d;
+  }
+  
+  #policy a:hover {
+      text-decoration: underline;
+      color: #0a66c2;
+  }
+  
+  @media screen and (max-width: 768px) {
+      body{
+          overflow: auto;
+      }
+  }
