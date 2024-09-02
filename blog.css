@@ -1,4 +1,4 @@
-body {
+ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -233,5 +233,28 @@ body {
   @media screen and (max-width: 768px) {
       body{
           overflow: auto;
+      }
+
+      h1{
+        font-weight: 500;
+        line-height: 28.6px;
+        font-size: 25px;
+      }
+      
+      .image-container {
+        width: 100vw;
+        height: 40vh;
+      }
+      
+      #image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+      
+      .container {
+        width: 90%;
+        margin: 2rem auto;
+        overflow-y: auto;
       }
   }
