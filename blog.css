@@ -258,3 +258,15 @@
         overflow-y: auto;
       }
   }
+
+  form div.incorrect label {
+color: #f06272;
+  }
+
+  form div.incorrect #input-field {
+border-color: #f06272;
+  }
+
+  #error-message {
+color: #f06272;
+  }
