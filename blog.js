@@ -55,3 +55,27 @@ allInputs.forEach(input => {
         });
     }
 })
+
+let currentSlide = 0;
+const testimonials = document.querySelectorAll('.testimonial');
+
+function showSlide(index) {
+    testimonials.forEach((testimonial, i) => {
+        testimonial.style.transform = `translateX(${100 * (i - index)}%)`;
+    });
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % testimonials.length;
+    showSlide(currentSlide);
+}
+
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + testimonials.length) % testimonials.length;
+    showSlide(currentSlide);
+}
+
+showSlide(currentSlide);
+
+setInterval(nextSlide, 5000);
+
