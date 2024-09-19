@@ -1,0 +1,3 @@
+[submodule "Paddyblog"]
+	path = Paddyblog
+	url = https://github.com/lijay24/Paddyblog.git
