@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ecf0f1;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+header {
+  background-color: #ecf0f1;
+  color: black;
+  padding: 0.5rem 0;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav-container .logo {
+  width: 50%;
+}
+
+.nav {
+  display: flex;
+  flex-grow: 1;
+}
+
+.nav--ul__one {
+  margin: 0 auto;
+}
+
+.nav-container,
+.nav--ul__one,
+.nav--ul__two {
+  display: flex;
+  gap: 1.6rem;
+  font-size: 1.2rem;
+}
+.nav--ul__two .nav-link {
+  text-decoration: underline;
+}
+
+.nav--ul__two .login_btn {
+  padding: 10px 30px;
+  color: #ecf0f1;
+  background-color: #f39c12;
+  border: 1px solid;
+  border-radius: 20px;
+  transition: all ease-in-out 0.3s;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.login_btn:hover {
+  border-color: #ecf0f1;
+  background-color: blue;
+  color: #ecf0f1;
+}
+.hamburger-menu {
+  display: none; /* Hidden by default for larger screens */
+  cursor: pointer;
+}
+.hero_text {
+  text-align: center;
+
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.hero_image img {
+  width: 95%;
+  place-items: center;
+  margin-left: 25px;
+}
+.hero_image .text {
+  width: 80%;
+  text-align: center;
+  margin-left: 30px;
+}
+.goal_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  width: 60%;
+
+  text-align: center;
+  margin: auto;
+}
+.goal_container .goal {
+  margin-top: 40px;
+  border: 2px solid #2c3e50;
+  border-top-left-radius: 15px;
+}
+.mission {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+.goal_container p {
+  color: #2c3e50;
+}
+.offer_container {
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 30px;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards__item {
+  display: flex;
+  padding: 1rem;
+  @media (min-width: 40rem) {
+    width: 50%;
+  }
+  @media (min-width: 56rem) {
+    width: 33.3333%;
+  }
+}
+.card {
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  &:hover {
+    .product {
+      filter: contrast(100%);
+    }
+  }
+}
+.card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+.product {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(70%);
+  filter: saturate(180%);
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  
+
+  
+}
+.card__text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+  }
+  .story{
+    text-align: center;
+    color: #2C3E50;
+}
+  .flex-container .box {
+    
+    width: 50%;
+    margin: 10px;
+    text-align: center;
+    line-height: 65px;
+    font-size: 20px;
+    color: #2C3E50;
+  }
+.join .join_text{
+    text-align: center;
+    color: #2C3E50;
+    font-weight: 500;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.join .exp{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    line-height: 28.13px;
+    
+}
+.navs--ul__two {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    justify-items: center;
+    margin-top: 30px;
+}
+.navs--ul__two .login_btnn {
+    padding: 10px 30px;
+    color: #ecf0f1;
+    background-color: #f39c12;
+    border: 1px solid;
+    border-radius: 20px;
+    transition: all ease-in-out 0.3s;
+    font-weight: 500;
+    margin-left: 550px;
+
+    
+  }
+.navs--ul__two .login_btns {
+    padding: 10px 30px;
+    background-color: #ecf0f1;
+    color: #f39c12;
+    border: 1px solid #f39c12;
+    border-radius: 20px;
+    transition: all ease-in-out 0.3s;
+    font-weight: 500;
+    
+    
+  }
+  .footer {
+    color: #fefefe;
+    width: 100%;
+    background-color:#7F8C8D;
+  }
+  
+  .footer .content {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5rem;
+    gap: 2rem;
+  }
+  
+  .footer .content p {
+    margin-bottom: 1.3rem;
+  }
+  
+  .footer .content a {
+    text-decoration: none;
+    color: #fefefe;
+  }
+  
+  .footer .content a:hover {
+    border-bottom: 1px solid #971717;
+  }
+  
+  .footer .content h4 {
+    margin-bottom: 1.3rem;
+    font-size: 19px;
+  }
+  
+  footer {
+    background-color: #2C3E50;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  footer hr {
+    margin: 2rem 0;
+  }
+  .legal{
+    padding: 15px;
+    text-align: center;
+  }
+  .subscribe{
+    color: #f39c12;
+    text-decoration: underline;
+    margin-right: 10px;
+  }
+  
+@media screen and (min-width: 24.375em) {
+    .legal .subscribe{
+        margin-left: auto;
+    }
+}
+@media (max-width: 700px) {
+  .nav-container .logo {
+    font-size: 1.2rem;
+    z-index: 2;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .nav--ul__one,
+  .nav--ul__two {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .hamburger-menu {
+    display: block;
+
+    z-index: 2;
+  }
+
+  .nav {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    width: 100%;
+
+    padding-top: 6rem;
+
+    align-items: center;
+    text-align: center;
+    background-color: #ecf0f1;
+    color: black;
+
+    transition: 0.15s ease-in-out;
+  }
+
+  .nav.active {
+    right: 0;
+  }
+  .goal_container {
+    display: block;
+  }
+  
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer .content,
+    .footer {
+      font-size: 14px;
+    }
+  }
+  
+  @media (orientation: landscape) and (max-height: 500px) {
+    .footer {
+      position: unset;
+    }
+  }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/Login.css">
+    <script>
+        function validateForm() {
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+
+            // Simple validation to check if email and password fields are filled
+            if (email === "" || password === "") {
+                alert("Please fill in all the fields.");
+                return false;  // Prevent form submission
+            } else if (!validateEmail(email)) {
+                alert("Please enter a valid email address.");
+                return false;  // Prevent form submission
+            } else {
+                alert("Login successful!");
+                window.location.href = "homepage.html";  // Redirect to another page
+                return false;  // Prevent form submission for demo purposes
+            }
+        }
+
+        // Basic email validation function
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(String(email).toLowerCase());
+        }
+    </script>
+</head>
+<body>
+    <div class="full-container">
+        <div class="wrapper">
+            <div id="inner">
+                <form action="#" class="container" onsubmit="return validateForm()">
+                    <h4>Welcome Back to PaddyBlog</h4>
+                    <p>We've missed you! Let's get you back to sharing and exploring.</p>
+                    <div class="form-wrapper">
+                        <label for="email">Email/ Username:</label>
+                        <input type="email" id="email" placeholder="sample@gmail.com" required>
+                    </div>
+                    <div class="form-wrapper">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" placeholder="*********" required>
+                    </div>
+                    <div class="login">
+                        <button type="submit">Login</button>
+                    </div>
+                    <div id="line">
+                        <hr> or <hr>
+                    </div>
+                    <div class="socials">
+                        <button id="google-btn">
+                            <img src="./images/google.svg" alt="google"><span class="text">Google</span>
+                        </button>
+                    </div>
+                    <div class="sign-up">
+                        <h5>Don't have an account? <a href="#">Sign Up</a></h5>
+                    </div>
+                </form>
+                <div class="image-holder">
+                    <img src="./images/Rectangle 2777.png" alt="Welcome Image">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
